@@ -19,7 +19,7 @@ public class EscolaAutenticacao extends GenericValidator<EscolaAutenticacao>{
     @Length(max = 100)
     private String nomeDoGestor;
     @NotNull
-    @NotEmpty
+    @NotEmpty //string vazia
     @Length(max = 1, min = 1,message = "1 - Diretor ou 2 - Outro Cargo")
     private String cargoGestor;
     @NotNull
